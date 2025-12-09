@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information System</title>
+
+    <!-- 🔹 Simple CSS Added -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f6ff;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #004aad;
+            color: white;
+            padding: 15px;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 6px;
+        }
+
+        p {
+            width: 90%;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table th {
+            background-color: #004aad;
+            color: white;
+            padding: 10px;
+        }
+
+        table td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        ul {
+            width: 90%;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        form {
+            width: 90%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            border: 1px solid #888;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            width: 140px;
+            padding: 10px;
+            background-color: #004aad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003580;
+        }
+
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>Employee Information System</b></h1>
+    <hr>
+    <img src="https://c8.alamy.com/comp/2BWWRAK/woman-working-in-home-office-cartoon-2BWWRAK.jpg" width="123" alt="">
+    <p>A dedicated and hardworking employee plays a vital role in the growth of any organization. With strong
+        communication skills, a positive attitude, and a willingness to learn, an employee contributes to achieving
+        company goals. By completing tasks on time, maintaining discipline, and supporting teamwork, an employee helps
+        create a productive work environment. Such commitment and professionalism make the employee a valuable asset to
+        the workplace.</p>
+    <hr>
+
+    <table border="2">
+        <tr>
+            <th>Employee Name</th>
+            <th>Department</th>
+            <th>Employee ID</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Rahul Sharma</td>
+            <td>IT</td>
+            <td>101</td>
+            <td>45,000</td>
+        </tr>
+        <tr>
+            <td>Priya Verma</td>
+            <td>HR</td>
+            <td>118</td>
+            <td>80,000</td>
+        </tr>
+        <tr>
+            <td>Sandeep Singh</td>
+            <td>Sales</td>
+            <td>302</td>
+            <td>42,000</td>
+        </tr>
+        <tr>
+            <td>Anjali Mehta</td>
+            <td>Finance</td>
+            <td>145</td>
+            <td>50,000</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <ul>
+        <li>HR</li>
+        <li>Sales</li>
+        <li>IT</li>
+        <li>Finance</li>
+    </ul>
+
+    <hr>
+
+    <form action="">
+        <label for="Full Name">Full Name</label>
+        <input type="text" name="Full Name" id="Full Name" required><br><br>
+
+        <label for="Email">Email</label>
+        <input type="text" name="Email" id="Email" required><br><br>
+
+        <label for="Age">Age</label>
+        <input type="text" name="Age" id="Age" required><br><br>
+
+        <label for="Gender">Gender</label>
+        <hr><br>
+        <input type="radio" name="Gender" id="Male" required>
+        <label for="Male">Male</label><br>
+        <input type="radio" name="Gender" id="Female" required>
+        <label for="Female">Female</label><br>
+        <input type="radio" name="Gender" id="Other" required>
+        <label for="Other">Other</label><br>
+    </form>
+
+    <hr>
+
+    <form action="">
+        <label for="Skills">Skills</label><br>
+        <input type="checkbox" name="Skills" id="communication" value="communication">
+        <label for="communication">communication</label><br>
+        <input type="checkbox" name="Skills" id="Coding" value="Coding">
+        <label for="Coding">Coding</label><br>
+        <input type="checkbox" name="Skills" id="Management" value="Management">
+        <label for="Management">Management</label><br>
+
+        <hr>
+
+        <label for="City">City</label><br>
+        <select name="City" id="City">
+            <option value="Ranchi">Ranchi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Jaipur">Jaipur</option>
+        </select><br>
+
+        <hr>
+
+        <label for="Experience/Notes">Experience/Notes</label><br>
+        <textarea name="Experience/Notes" id="Experience/Notes" cols="30" rows="10"></textarea><br><br>
+
+        <input type="submit" name="Submit" id="Submit">
+    </form>
+
+    <hr>
+
+    <p>Employee data is important because it helps a company understand and manage its workforce better. It includes
+        details like skills, performance, attendance, and experience, which help in making fair decisions about
+        promotions, training, and salaries. With accurate employee data, the company can improve productivity, create a
+        safe work environment, and ensure that employees get the support they need to do their jobs well.</p>
+
+    <hr>
+
+    <footer>
+        <h3><i>Company Name: Xzist</i></h3>
+        <i>Contact Email: <a href="mailto:Xzist@gmail.com" style="color: yellow;">Xzist@gmail.com</a></i><br>
+        <i>Phone Number: 9905971954</i><br>
+        <p>© 2025 All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
